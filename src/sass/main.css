@@ -14,6 +14,9 @@
 .__app li {
   list-style: none;
 }
+.__app input, .__app button, .__app a {
+  outline: none;
+}
 .__app .field {
   display: flex;
   align-items: center;
@@ -25,73 +28,61 @@
 
 .col-1 {
   width: 8.3333333333%;
-  border: 1px solid #1A1A1A;
   padding: 10px 10px;
 }
 
 .col-2 {
   width: 16.6666666667%;
-  border: 1px solid #1A1A1A;
   padding: 10px 10px;
 }
 
 .col-3 {
   width: 25%;
-  border: 1px solid #1A1A1A;
   padding: 10px 10px;
 }
 
 .col-4 {
   width: 33.3333333333%;
-  border: 1px solid #1A1A1A;
   padding: 10px 10px;
 }
 
 .col-5 {
   width: 41.6666666667%;
-  border: 1px solid #1A1A1A;
   padding: 10px 10px;
 }
 
 .col-6 {
   width: 50%;
-  border: 1px solid #1A1A1A;
   padding: 10px 10px;
 }
 
 .col-7 {
   width: 58.3333333333%;
-  border: 1px solid #1A1A1A;
   padding: 10px 10px;
 }
 
 .col-8 {
   width: 66.6666666667%;
-  border: 1px solid #1A1A1A;
   padding: 10px 10px;
 }
 
 .col-9 {
   width: 75%;
-  border: 1px solid #1A1A1A;
   padding: 10px 10px;
 }
 
 .col-10 {
   width: 83.3333333333%;
-  border: 1px solid #1A1A1A;
   padding: 10px 10px;
 }
 
 .col-11 {
   width: 91.6666666667%;
-  border: 1px solid #1A1A1A;
   padding: 10px 10px;
 }
 
 .col-12 {
   width: 100%;
-  border: 1px solid #1A1A1A;
   padding: 10px 10px;
 }
 
@@ -158,7 +149,28 @@ header nav .menu_bar {
   padding: 16px 0;
   background: var(--gray-scale-gray-800, #333);
 }
+header nav .menu_bar ul li {
+  position: relative;
+  padding: 5px 10px;
+}
+header nav .menu_bar ul li::after {
+  content: attr(text);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #FFFFFF;
+}
 header nav .menu_bar ul li a {
+  color: var(--gray-scale-gray-400, #999);
+  transition: all 0.3s ease;
+}
+header nav .menu_bar ul li:hover::after, header nav .menu_bar ul li.active::after {
+  width: 100%;
+  transition: all 0.4s ease;
+}
+header nav .menu_bar ul li:hover a, header nav .menu_bar ul li.active a {
   color: #FFFFFF;
 }
 header nav .menu_bar .field .phone_number {

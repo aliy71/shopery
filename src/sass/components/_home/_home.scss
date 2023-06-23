@@ -20,6 +20,7 @@ header{
                     border: 1px solid #666;
                     border-radius: 6px 0px 0px 6px;
                 }
+                
                 .btn{
                     @include padding(14px,24px);
                     background: $main_green_color;
@@ -63,10 +64,35 @@ header{
             background: var(--gray-scale-gray-800, #333);
 
             ul{
+                
                 li{
-                    a{
-                        color: $main_white_color;
+                    position: relative;
+                    @include padding(5px,10px);
+                    
+
+                    &::after{
+                        content:attr(text);
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        width: 0%;
+                        height: 1px;
+                        background-color: $main_white_color;
                     }
+                    a{
+                        color: var(--gray-scale-gray-400, #999);
+                        transition: all .3s ease;
+                    }
+                    &:hover ,&.active {
+                        &::after{
+                            width: 100%;
+                            transition: all .4s ease;
+                        }
+                        a{
+                            color: $main_white_color
+                        }
+                    }
+
                 }
             }
 

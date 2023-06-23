@@ -24,6 +24,10 @@
         list-style: none;
     }
 
+    input,button,a{
+        outline: none
+    }
+    
     .field{
         @include d_flex();
     }
@@ -35,7 +39,7 @@
 @for $i from 1 through 12 {
     .col-#{$i}{
         width: calc(100% / 12 * $i);
-        border: 1px solid $black_color;
+        // border: 1px solid $black_color;
         @include padding(10px, 10px);
         // text-align: center;
     }

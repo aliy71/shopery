@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="./public/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/logo/favicon-16x16.png">
+    <link rel="manifest" href="./public/logo/site.webmanifest">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopery</title>
@@ -29,7 +33,7 @@
                                 </p>
                             </div>
                             <div class="col-6">
-    
+
                             </div>
                         </div>
                     </div>
@@ -38,7 +42,8 @@
                             <img src="./public/images/Logo.svg" alt="svg">
                         </div>
                         <form class="col-8">
-                            <label for="search"> <i class="fa-solid fa-magnifying-glass"></i> <span>search</span> </label>
+                            <label for="search"> <i class="fa-solid fa-magnifying-glass"></i> <span>search</span>
+                            </label>
                             <input type="text" name="search">
                             <button class="btn">search</button>
                         </form>
@@ -59,13 +64,13 @@
                     </div>
                     <div class="menu_bar">
                         <div class="field container">
-                            <ul class="field col-6">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Shop</a></li>
-                                <li><a href="#">Pages</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                            <ul class="menu field col-6">
+                                <li class="menu_btn active"><a href="#" class="">Home</a></li>
+                                <li class="menu_btn"><a href="#">Shop</a></li>
+                                <li class="menu_btn"><a href="#">Pages</a></li>
+                                <li class="menu_btn"><a href="#">Blog</a></li>
+                                <li class="menu_btn"><a href="#">About Us</a></li>
+                                <li class="menu_btn"><a href="#">Contact Us</a></li>
                             </ul>
                             <p class="phone_number col-6">
                                 <i class="fa-regular fa-solid fa-phone-volume"></i>
@@ -74,22 +79,22 @@
                         </div>
                     </div>
                 </nav>
-                <div class="col-12 container">
-                    <div class="field">
-                        <div class="col-5"></div>
-                        <div class="col-7"></div>
-                    </div>
-                </div>
-                <div class="col-10 field container">
-                    <div class="col-4"></div>
-                    <div class="col-4"></div>
-                    <div class="col-4"></div>
-                    <div class="col-4"></div>
-                </div>
             </header>
             <main>
                 <!--  -->
                 <section class="home" id="home">
+                    <div class="col-12 container">
+                        <div class="field">
+                            <div class="col-5"></div>
+                            <div class="col-7"></div>
+                        </div>
+                    </div>
+                    <div class="col-10 field container">
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                        <div class="col-4"></div>
+                    </div>
                     <div class="container field">
                         <div class="col-2"></div>
                         <div class="col-2"></div>
@@ -413,6 +418,7 @@
             </footer>
         </section>
     </div>
+    <script src="./src/js/main.js"></script>
 </body>
 
 </html>
