@@ -16,6 +16,7 @@
 }
 .__app .field {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .__app .wrapper {
@@ -24,84 +25,143 @@
 
 .col-1 {
   width: 8.3333333333%;
-  border: 1px solid;
+  border: 1px solid #1A1A1A;
   padding: 10px 10px;
-  text-align: center;
 }
 
 .col-2 {
   width: 16.6666666667%;
-  border: 1px solid;
+  border: 1px solid #1A1A1A;
   padding: 10px 10px;
-  text-align: center;
 }
 
 .col-3 {
   width: 25%;
-  border: 1px solid;
+  border: 1px solid #1A1A1A;
   padding: 10px 10px;
-  text-align: center;
 }
 
 .col-4 {
   width: 33.3333333333%;
-  border: 1px solid;
+  border: 1px solid #1A1A1A;
   padding: 10px 10px;
-  text-align: center;
 }
 
 .col-5 {
   width: 41.6666666667%;
-  border: 1px solid;
+  border: 1px solid #1A1A1A;
   padding: 10px 10px;
-  text-align: center;
 }
 
 .col-6 {
   width: 50%;
-  border: 1px solid;
+  border: 1px solid #1A1A1A;
   padding: 10px 10px;
-  text-align: center;
 }
 
 .col-7 {
   width: 58.3333333333%;
-  border: 1px solid;
+  border: 1px solid #1A1A1A;
   padding: 10px 10px;
-  text-align: center;
 }
 
 .col-8 {
   width: 66.6666666667%;
-  border: 1px solid;
+  border: 1px solid #1A1A1A;
   padding: 10px 10px;
-  text-align: center;
 }
 
 .col-9 {
   width: 75%;
-  border: 1px solid;
+  border: 1px solid #1A1A1A;
   padding: 10px 10px;
-  text-align: center;
 }
 
 .col-10 {
   width: 83.3333333333%;
-  border: 1px solid;
+  border: 1px solid #1A1A1A;
   padding: 10px 10px;
-  text-align: center;
 }
 
 .col-11 {
   width: 91.6666666667%;
-  border: 1px solid;
+  border: 1px solid #1A1A1A;
   padding: 10px 10px;
-  text-align: center;
 }
 
 .col-12 {
   width: 100%;
-  border: 1px solid;
+  border: 1px solid #1A1A1A;
   padding: 10px 10px;
-  text-align: center;
+}
+
+header nav .top_bar {
+  border-bottom: 1px solid #666;
+}
+header nav .field form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+header nav .field form label {
+  position: absolute;
+  z-index: 1;
+  left: 17.5%;
+}
+header nav .field form input {
+  position: relative;
+  width: 300px;
+  padding: 14px 24px;
+  border: 1px solid #666;
+  border-radius: 6px 0px 0px 6px;
+}
+header nav .field form .btn {
+  padding: 14px 24px;
+  background: #00B207;
+  color: #FFFFFF;
+  border: 1px solid #666;
+  border-radius: 0px 6px 6px 0px;
+}
+header nav .field .top_bar_icons i {
+  font-size: 22px;
+  font-weight: _;
+  color: _;
+}
+header nav .field .top_bar_icons .col-7 {
+  gap: 5px;
+  border: none;
+}
+header nav .field .top_bar_icons .col-7 .col-3 {
+  padding: 0;
+}
+header nav .field .top_bar_icons .col-7 .col-9 {
+  padding: 0;
+  text-align: start;
+}
+header nav .field .top_bar_icons .col-7 .col-9 p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1A1A1A;
+}
+header nav .field .top_bar_icons .col-7 .col-9 p:last-child {
+  font-size: _;
+  font-weight: 600;
+  color: #1A1A1A;
+}
+header nav .field .top_bar_icons .col-5 {
+  text-align: end;
+  border-right: 1px solid #666;
+}
+header nav .menu_bar {
+  padding: 16px 0;
+  background: var(--gray-scale-gray-800, #333);
+}
+header nav .menu_bar ul li a {
+  color: #FFFFFF;
+}
+header nav .menu_bar .field .phone_number {
+  text-align: end;
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */

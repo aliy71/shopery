@@ -3,11 +3,41 @@
 @import './mixins/text';
 @import './mixins/hover';
 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.__app{
+    .container{
+        width: 80%;
+        margin: 0 auto; 
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    .field{
+        @include d_flex();
+    }
+    .wrapper{
+        flex-wrap: wrap;
+    }
+}
+
 @for $i from 1 through 12 {
     .col-#{$i}{
         width: calc(100% / 12 * $i);
-        border: 1px solid;
+        border: 1px solid $black_color;
         @include padding(10px, 10px);
-        text-align: center;
+        // text-align: center;
     }
 }
+
