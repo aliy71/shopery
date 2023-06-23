@@ -1,0 +1,12 @@
+@import './mixins/d-flex';
+@import './mixins/padding';
+@import './mixins/text';
+@import './mixins/hover';
+
+@for $i from 1 through 12 {
+    .col-#{$i}{
+        width: calc(100% / 12 * $i);
+        border: 1px solid;
+        // @include padding(5px, 10px)
+    }
+}

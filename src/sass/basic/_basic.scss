@@ -1,2 +1,29 @@
 @import './fonts';
 @import './colors';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.__app{
+    .container{
+        width: 80%;
+        margin: 0 auto; 
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    .field{
+        @include d_flex(center);
+        // display: flex;
+        // justify-content: space-between;
+    }
+}
