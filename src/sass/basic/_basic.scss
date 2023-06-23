@@ -22,8 +22,12 @@
     }
 
     .field{
-        @include d_flex(center);
-        // display: flex;
-        // justify-content: space-between;
+        // @include d_flex();
+        display: flex;
+        justify-content: space-between;
+        // padding: 10px 10px;
+    }
+    .wrapper{
+        flex-wrap: wrap;
     }
 }
