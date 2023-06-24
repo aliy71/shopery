@@ -5,7 +5,7 @@
 }
 
 .__app .container {
-  width: 80%;
+  width: 1140px;
   margin: 0 auto;
 }
 .__app a {
@@ -25,6 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
 }
 .__app .wrapper {
   flex-wrap: wrap;
@@ -40,88 +41,68 @@
   border: 1px solid #e6e6e6;
   border-radius: 8px;
 }
+.__app .border:hover {
+  border-color: #00B207;
+  box-shadow: 0 0 1px 1px #00B207;
+}
 
 .col-1 {
   width: 8.3333333333%;
-  padding: 10px 10px;
-  text-align: center;
   overflow: hidden;
 }
 
 .col-2 {
   width: 16.6666666667%;
-  padding: 10px 10px;
-  text-align: center;
   overflow: hidden;
 }
 
 .col-3 {
   width: 25%;
-  padding: 10px 10px;
-  text-align: center;
   overflow: hidden;
 }
 
 .col-4 {
   width: 33.3333333333%;
-  padding: 10px 10px;
-  text-align: center;
   overflow: hidden;
 }
 
 .col-5 {
   width: 41.6666666667%;
-  padding: 10px 10px;
-  text-align: center;
   overflow: hidden;
 }
 
 .col-6 {
   width: 50%;
-  padding: 10px 10px;
-  text-align: center;
   overflow: hidden;
 }
 
 .col-7 {
   width: 58.3333333333%;
-  padding: 10px 10px;
-  text-align: center;
   overflow: hidden;
 }
 
 .col-8 {
   width: 66.6666666667%;
-  padding: 10px 10px;
-  text-align: center;
   overflow: hidden;
 }
 
 .col-9 {
   width: 75%;
-  padding: 10px 10px;
-  text-align: center;
   overflow: hidden;
 }
 
 .col-10 {
   width: 83.3333333333%;
-  padding: 10px 10px;
-  text-align: center;
   overflow: hidden;
 }
 
 .col-11 {
   width: 91.6666666667%;
-  padding: 10px 10px;
-  text-align: center;
   overflow: hidden;
 }
 
 .col-12 {
   width: 100%;
-  padding: 10px 10px;
-  text-align: center;
   overflow: hidden;
 }
 
@@ -193,13 +174,14 @@ header nav .menu_bar ul li {
   padding: 5px 10px;
 }
 header nav .menu_bar ul li::after {
-  content: attr(text);
+  content: "";
   position: absolute;
-  top: 100%;
+  top: 97.5%;
   left: 0;
   width: 0%;
   height: 1px;
   background-color: #FFFFFF;
+  z-index: 999;
 }
 header nav .menu_bar ul li a {
   color: var(--gray-scale-gray-400, #999);
@@ -256,6 +238,7 @@ header nav .menu_bar .field .phone_number {
   position: relative;
   top: 60px;
   margin: 0 auto;
+  padding: 10px 10px;
   background: #FFFFFF;
   box-shadow: 0px 8px 40px 0px rgba(0, 38, 3, 0.08);
   border-radius: 8px;
@@ -274,5 +257,71 @@ header nav .menu_bar .field .phone_number {
   color: #1A1A1A;
 }
 .home .feature_product {
-  padding: 2rem 0;
+  margin: 5rem auto 0 auto;
+}
+.home .feature_product h3 {
+  text-align: center;
+  padding: 20px 10px;
+}
+.home .feature_product .field {
+  margin: 10px 0;
+}
+.home .feature_product .field .col-2 {
+  padding: 0;
+}
+.home .feature_product .field .col-2 .col-12 {
+  padding: 5px;
+}
+.home .feature_product .field .col-9 .col-4 h3 {
+  text-align: start;
+  padding: 5px 0;
+}
+.home .feature_product .field .col-9 .col-4 .col-12 {
+  margin: 10px 0;
+}
+.home .feature_product .field .image {
+  position: relative;
+  height: 320px;
+}
+.home .feature_product .field .image img {
+  position: absolute;
+}
+.home .feature_product .field .image .col-12 {
+  position: relative;
+  text-align: center;
+  top: 15%;
+}
+.home .feature_product .field .image .col-12 h5 {
+  font-size: 14px;
+  font-weight: 900;
+  color: #1A1A1A;
+}
+.home .feature_product .field .image .col-12 .price {
+  font-size: 28px;
+  font-weight: 900;
+  color: #00B207;
+}
+.home .top_categories {
+  padding: 40px 0;
+}
+.home .top_categories h3 {
+  text-align: center;
+  padding: 20px 0;
+}
+.home .top_categories .field .col-2 {
+  padding: 15px 10px;
+  flex-direction: column;
+}
+.home .top_categories .field .col-2 .col-12 {
+  text-align: center;
+}
+.home .top_categories .field .col-2 .col-12 p {
+  font-size: 18px;
+  font-weight: 900;
+  color: #00B207;
+}
+.home .top_categories .field .col-2 .col-12 p:last-child {
+  font-size: 12px;
+  font-weight: 400;
+  color: #1A1A1A;
 }/*# sourceMappingURL=main.css.map */

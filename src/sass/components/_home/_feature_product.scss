@@ -1,0 +1,52 @@
+.feature_product{
+    margin: 5rem auto 0 auto;
+
+    h3{
+        text-align: center;
+        @include padding(20px,10px)
+    }
+
+    .field{
+        margin: 10px 0;
+        .col-2{
+            padding: 0;
+
+            .col-12{
+                padding: 5px;
+            }
+        }
+        .col-9{
+            .col-4{
+                h3{
+                    text-align: start;
+                    padding: 5px 0;
+                }
+                .col-12{
+                    margin: 10px 0;
+                }
+            }
+        }
+        .image{
+            position: relative;
+            height: 320px;
+
+            img{
+                position: absolute;
+            }
+
+            .col-12{
+                position: relative;
+                text-align: center;
+                top: 15%;
+
+                h5{
+                    @include text(14px,900, )
+                }
+
+                .price{
+                    @include text(28px, 900, $main_green_color)
+                }
+            }
+        }
+    }
+}

@@ -71,14 +71,16 @@ header{
                     
 
                     &::after{
-                        content:attr(text);
+                        content:'';
                         position: absolute;
-                        top: 100%;
+                        top: 97.5%;
                         left: 0;
                         width: 0%;
                         height: 1px;
                         background-color: $main_white_color;
+                        z-index: 999;
                     }
+
                     a{
                         color: var(--gray-scale-gray-400, #999);
                         transition: all .3s ease;

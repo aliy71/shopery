@@ -1,0 +1,28 @@
+.top_categories{
+    @include padding(40px, 0);
+    h3{
+        text-align: center;
+        @include padding(20px, 0)
+    }
+
+    .field{
+        
+        .col-2{
+            @include padding(15px, 10px);
+            flex-direction: column;
+            
+            .col-12{
+                text-align: center;
+
+                p{
+                    @include text(18px, 900, $main_green_color);
+
+                    &:last-child{
+                        @include text(12px,400,)
+                    }
+                }
+            }
+        }
+
+    }
+}
