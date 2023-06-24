@@ -47,6 +47,7 @@
         border-radius: 30px;
         background: $main_green_color;
         color: $main_white_color;
+        cursor: pointer;
     }
 
     .border{
@@ -55,7 +56,7 @@
 
         &:hover{
             border-color: $main_green_color;
-            box-shadow: 0 0 1px 1px $main_green_color;
+            box-shadow: 0 0 3px 0px $main_green_color;
         }
     }
 }
@@ -64,6 +65,7 @@
     .col-#{$i}{
         width: calc(100% / 12 * $i);
         overflow: hidden;
+        // border: 1px solid $black_color;
     }
 }
 

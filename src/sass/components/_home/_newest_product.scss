@@ -1,0 +1,23 @@
+.newest_product{
+    @include padding(30px, 0);
+    .field{
+        h3{
+            @include padding(10px, 0)
+        }
+        .col-2{
+            .col-12{
+                &.field{
+                    @include padding(10px, 10px);
+
+                    .col-3{
+                        i{
+                            @include padding(10px, 10px);
+                            border-radius: 50%;
+                            background: $main_bg_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

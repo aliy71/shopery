@@ -36,6 +36,7 @@
   border-radius: 30px;
   background: #00B207;
   color: #FFFFFF;
+  cursor: pointer;
 }
 .__app .border {
   border: 1px solid #e6e6e6;
@@ -43,7 +44,7 @@
 }
 .__app .border:hover {
   border-color: #00B207;
-  box-shadow: 0 0 1px 1px #00B207;
+  box-shadow: 0 0 3px 0px #00B207;
 }
 
 .col-1 {
@@ -324,4 +325,72 @@ header nav .menu_bar .field .phone_number {
   font-size: 12px;
   font-weight: 400;
   color: #1A1A1A;
+}
+.home .newest_product {
+  padding: 30px 0;
+}
+.home .newest_product .field h3 {
+  padding: 10px 0;
+}
+.home .newest_product .field .col-2 .col-12.field {
+  padding: 10px 10px;
+}
+.home .newest_product .field .col-2 .col-12.field .col-3 i {
+  padding: 10px 10px;
+  border-radius: 50%;
+  background: #EDF2EE;
+}
+.home .testominal {
+  padding: 30px 0;
+  background: #EDF2EE;
+}
+.home .testominal .field h3 {
+  padding: 10px 0;
+}
+.home .testominal .field .col-4 {
+  padding: 24px 24px;
+  background: #FFFFFF;
+}
+.home .testominal .field .col-4 .col-6 {
+  margin: 1rem 0 0 0;
+}
+.home .testominal .field .col-4 .col-6 .col-3 {
+  height: 100%;
+  border-radius: 50%;
+  background: #1A1A1A;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.home .testominal .field .col-4 .col-6 .col-3 img {
+  height: 100%;
+}
+.home .instagram {
+  padding: 100px 0px;
+}
+.home .instagram h3 {
+  text-align: center;
+  padding: 30px 0;
+}
+.home .instagram .field .col-2 {
+  height: 200px;
+  position: relative;
+}
+.home .instagram .field .col-2 img {
+  position: absolute;
+}
+.home .instagram .field .col-2 .col-12 {
+  z-index: -1;
+  position: relative;
+  height: 100%;
+  background: rgba(43, 87, 46, 0.5568627451);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .instagram .field .col-2 .col-12 i {
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+.home .instagram .field .col-2:hover .col-12 {
+  z-index: 1;
 }/*# sourceMappingURL=main.css.map */

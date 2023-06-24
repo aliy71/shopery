@@ -1,0 +1,33 @@
+.instagram{
+    @include padding(100px, 0px);
+    h3{
+        text-align: center;
+        @include padding(30px, 0)
+    }
+    .field{
+        .col-2{
+            height: 200px;
+            position: relative;
+            img{
+                position: absolute;
+            }
+            .col-12{
+                z-index: -1;
+                position: relative;
+                height: 100%;
+                background:#2b572e8e;
+
+                @include d_flex(center);
+                i{
+                    font-size: 2rem;
+                    color: $main_white_color;
+                }
+            }
+            &:hover{
+                .col-12{
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}
