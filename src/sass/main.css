@@ -46,6 +46,17 @@
   border-color: #00B207;
   box-shadow: 0 0 3px 0px #00B207;
 }
+.__app .portal_text {
+  font-size: 8px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.__app .place {
+  display: none;
+}
+.__app .show {
+  display: block;
+}
 
 .col-1 {
   width: 8.3333333333%;

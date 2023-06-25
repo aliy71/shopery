@@ -59,6 +59,18 @@
             box-shadow: 0 0 3px 0px $main_green_color;
         }
     }
+
+    .portal_text{
+        @include text(8px, 400, $main_white_color)
+    }
+
+    .place{
+        display: none;
+    }
+
+    .show{
+        display: block;
+    }
 }
 
 @for $i from 1 through 12 {
