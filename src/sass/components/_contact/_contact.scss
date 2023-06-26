@@ -1,0 +1,46 @@
+.contact_us{
+    .field{
+        &.container{
+            @include padding(40px, 0)
+        }
+        // padding: 20px 0;
+        .col-9,.col-3{
+            box-shadow: 0 0 2px 0px $black_color;
+        }
+
+        .col-3{
+            .col-12{
+                text-align: center;
+                @include padding(30px, 30px);
+                img{
+                    width: 50px;
+                }
+
+            }
+        }
+
+        .col-9{
+            @include padding(40px, 40px);
+
+            .col-6{
+                .text{
+                    @include text(14px, 400, $black_color);
+                    @include padding(10px, 0)
+                }
+            }
+
+            form{
+                input,textarea{
+                    width: 100%;
+                    @include padding(10px, 5px);
+                    margin: 5px 0;
+                    outline: none;
+                }
+
+                .btn{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

@@ -404,4 +404,95 @@ header nav .menu_bar .field .phone_number {
 }
 .home .instagram .field .col-2:hover .col-12 {
   z-index: 1;
+}
+
+.main .container.field {
+  align-items: start;
+}
+.main .container aside .col-12 {
+  height: 50px;
+  border-bottom: 1px solid #c0c0c0;
+  overflow: hidden;
+}
+.main .container aside .col-12 li {
+  padding: 15px 5px;
+}
+.main .container aside .col-12 li a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1A1A1A;
+}
+.main .container aside .col-12 li:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.main .container aside .col-12 li:first-child span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1A1A1A;
+}
+.main .container aside .col-12 li:hover {
+  background: #EDF2EE;
+}
+.main .container aside .col-12.active {
+  height: 100%;
+  overflow: auto;
+}
+.main .container aside .col-12.active li:first-child {
+  background: #EDF2EE;
+}
+.main .container aside .col-12.active li:first-child i {
+  rotate: 180deg;
+}
+.main .container article .shop .field {
+  flex-wrap: wrap;
+  row-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.main .container article .shop .field .col-4 {
+  width: 32.5%;
+}
+.main .container article .shop .field .col-4 .col-12:last-child {
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .container article .shop .field .col-4 .col-12:last-child .col-3 {
+  width: 20%;
+}
+
+.contact_us .field.container {
+  padding: 40px 0;
+}
+.contact_us .field .col-9, .contact_us .field .col-3 {
+  box-shadow: 0 0 2px 0px #1A1A1A;
+}
+.contact_us .field .col-3 .col-12 {
+  text-align: center;
+  padding: 30px 30px;
+}
+.contact_us .field .col-3 .col-12 img {
+  width: 50px;
+}
+.contact_us .field .col-9 {
+  padding: 40px 40px;
+}
+.contact_us .field .col-9 .col-6 .text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1A1A1A;
+  padding: 10px 0;
+}
+.contact_us .field .col-9 form input, .contact_us .field .col-9 form textarea {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 5px 0;
+  outline: none;
+}
+.contact_us .field .col-9 form .btn {
+  margin-top: 20px;
 }/*# sourceMappingURL=main.css.map */

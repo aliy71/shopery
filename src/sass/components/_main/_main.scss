@@ -1,0 +1,46 @@
+.main{
+    .container{
+        &.field{
+            align-items: start;
+        }
+        aside{
+            .col-12{
+                height: 50px;
+                border-bottom: 1px solid #c0c0c0;
+                overflow: hidden;
+
+                li{
+                    @include padding(15px, 5px);
+                    a{
+                        @include text(14px, 400, $black_color)
+                    }
+
+                    &:first-child{
+                        @include d_flex();
+                        cursor: pointer;
+                        span{
+                            @include text(16px, 600, $black_color)
+                        }
+                    }
+                    &:hover{
+                        background: $main_bg_color;
+                    }
+                }
+                &.active{
+                    height: 100%;
+                    overflow: auto;
+
+                    li:first-child{
+                        background: $main_bg_color;
+                        i{
+                            rotate: 180deg;
+                        }
+                    }
+                }
+            }
+        }
+        article{
+            @import './shop';
+        }
+    }
+}

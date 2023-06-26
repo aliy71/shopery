@@ -1,9 +1,15 @@
 const menuBtn = document.querySelector('.menu')
 const place = document.querySelectorAll('.portal_text')
 const main  = document.querySelector('.main')
+const filterBar = document.querySelectorAll('.filter_bar')
+
 function addClassList(param, className) {
     param.classList.remove(className)
     param.classList.add(className)
+}
+
+const toggleClassList = (param, className) => {
+    param.classList.toggle(className)
 }
 
 function eventClick(param) {
@@ -14,8 +20,6 @@ function eventClick(param) {
         addClassList(param, 'active')
         place.forEach(i => {
             i.parentElement.classList.remove('show')
-            console.log(i);
-            // console.log(i.textContent);
             
             if(i.textContent.toLowerCase().trim() == param.textContent.toLowerCase().trim()){
                 if( i.textContent.toLowerCase().trim() == 'shop' || i.textContent.toLowerCase().trim() == 'blog' ){
@@ -30,11 +34,18 @@ function eventClick(param) {
     })
 }
 
+function filterBarEvent(param) {
+    param.parentElement.classList.remove('active')
+    param.addEventListener('click', () => {
+        toggleClassList(param.parentElement, 'active')
+    })
+}
+
 function iteration(param) {
     for (let i of param) {
-        eventClick(i)
+        i.parentElement.className == 'menu field col-6' ? eventClick(i) : filterBarEvent(i);
     }
 }
 
-
 iteration(menuBtn.children)
+iteration(filterBar)

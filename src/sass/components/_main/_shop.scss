@@ -1,0 +1,19 @@
+.shop{
+    .field{
+        flex-wrap: wrap;
+        row-gap: 10px;
+        column-gap: 10px;
+        .col-4{
+            width: 32.5%;
+            .col-12{
+                &:last-child{
+                    @include padding(10px,10px);
+                    @include d_flex();
+                    .col-3{
+                        width: 20%;
+                    }
+                }
+            }
+        }
+    }
+}
