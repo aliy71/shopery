@@ -1,0 +1,97 @@
+footer{
+    background: $main_bg_color;
+    .field{
+        &:first-child{
+            @include padding(10px, 0)
+        }
+        h3{
+            color: $main_white_color;
+            &:first-child{
+                color: $black_color;
+            }
+        }
+        p{
+            @include text(16px, 400, #999)
+        }
+        .col-4{
+            img{
+                width: 60%;
+            }
+        }
+        .col-4{
+            .col-12{
+                img{
+                    width: 150px;
+                }
+            }
+        }
+
+        form{
+            input{
+                width: 100%;
+                @include padding(15px, 10px)
+            }
+        }
+
+        &.author-field{
+            height: 100%;
+
+            .col-4:last-child{
+                @include d_flex(start);
+                gap: 10px;
+
+                img{
+                    width: 50px;
+                }
+            }
+        }
+    }
+
+    
+    .footer_field{
+        
+        *{
+            // color: $main_white_color;
+        }
+        background: $black_color;
+        &,& .field{
+            @include padding(20px, 0)
+        }
+
+        .field{
+            ul{
+                li{
+                    a{
+                        color: #999;
+                        &:hover{
+                            color: $main_white_color;
+                        }
+                    }
+                    
+                    &:first-child{
+                        @include text(18px, 600, $main_white_color)
+                    }
+                }
+            }
+            &.footer_menu{
+                align-items: start;
+                .col-4{
+                    padding: 0;
+
+                    .col-12{
+                        margin: 10px 0;
+                    }
+                }
+                ul{
+                    align-items: start;
+                    li{
+                        @include padding(5px, 0);
+                        margin: 0;
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+}

@@ -495,4 +495,77 @@ header nav .menu_bar .field .phone_number {
 }
 .contact_us .field .col-9 form .btn {
   margin-top: 20px;
+}
+
+footer {
+  background: #EDF2EE;
+}
+footer .field:first-child {
+  padding: 10px 0;
+}
+footer .field h3 {
+  color: #FFFFFF;
+}
+footer .field h3:first-child {
+  color: #1A1A1A;
+}
+footer .field p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #999;
+}
+footer .field .col-4 img {
+  width: 60%;
+}
+footer .field .col-4 .col-12 img {
+  width: 150px;
+}
+footer .field form input {
+  width: 100%;
+  padding: 15px 10px;
+}
+footer .field.author-field {
+  height: 100%;
+}
+footer .field.author-field .col-4:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+footer .field.author-field .col-4:last-child img {
+  width: 50px;
+}
+footer .footer_field {
+  background: #1A1A1A;
+}
+footer .footer_field, footer .footer_field .field {
+  padding: 20px 0;
+}
+footer .footer_field .field ul li a {
+  color: #999;
+}
+footer .footer_field .field ul li a:hover {
+  color: #FFFFFF;
+}
+footer .footer_field .field ul li:first-child {
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+footer .footer_field .field.footer_menu {
+  align-items: start;
+}
+footer .footer_field .field.footer_menu .col-4 {
+  padding: 0;
+}
+footer .footer_field .field.footer_menu .col-4 .col-12 {
+  margin: 10px 0;
+}
+footer .footer_field .field.footer_menu ul {
+  align-items: start;
+}
+footer .footer_field .field.footer_menu ul li {
+  padding: 5px 0;
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
