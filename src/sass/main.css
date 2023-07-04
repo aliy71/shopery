@@ -50,6 +50,8 @@
   font-size: 8px;
   font-weight: 400;
   color: #FFFFFF;
+  visibility: hidden;
+  cursor: default;
 }
 .__app .place {
   display: none;

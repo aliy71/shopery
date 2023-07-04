@@ -61,7 +61,9 @@
     }
 
     .portal_text{
-        @include text(8px, 400, $main_white_color)
+        @include text(8px, 400, $main_white_color);
+        visibility: hidden;
+        cursor:default;
     }
 
     .place{
