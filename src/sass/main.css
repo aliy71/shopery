@@ -409,6 +409,9 @@ header nav .menu_bar .field .phone_number {
 .main .container.field {
   align-items: start;
 }
+.main .container aside {
+  overflow-y: auto;
+}
 .main .container aside .col-12 {
   height: 50px;
   border-bottom: 1px solid #c0c0c0;
@@ -446,6 +449,9 @@ header nav .menu_bar .field .phone_number {
 .main .container aside .col-12.active li:first-child i {
   rotate: 180deg;
 }
+.main .container article {
+  overflow: auto;
+}
 .main .container article .shop .field {
   flex-wrap: wrap;
   row-gap: 10px;
@@ -463,6 +469,55 @@ header nav .menu_bar .field .phone_number {
 }
 .main .container article .shop .field .col-4 .col-12:last-child .col-3 {
   width: 20%;
+}
+
+.testominal {
+  padding: 30px 0;
+  background: #EDF2EE;
+}
+.testominal .field h3 {
+  padding: 10px 0;
+}
+.testominal .field .col-4 {
+  padding: 24px 24px;
+  background: #FFFFFF;
+}
+.testominal .field .col-4 .col-6 {
+  margin: 1rem 0 0 0;
+}
+.testominal .field .col-4 .col-6 .col-3 {
+  height: 100%;
+  border-radius: 50%;
+  background: #1A1A1A;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.testominal .field .col-4 .col-6 .col-3 img {
+  height: 100%;
+}
+
+#about .our_team {
+  padding: 30px 0;
+  text-align: center;
+}
+#about .our_team .field {
+  padding: 15px 0;
+}
+#about .our_team .field .col-3 {
+  text-align: start;
+}
+#about .our_team .field .col-3 .col-12:last-child {
+  padding: 10px 20px;
+}
+#about .sponsors {
+  padding: 50px 0px;
+}
+#about .sponsors .col-2 {
+  padding: 10px 20px;
+}
+#about .sponsors .col-2 img {
+  width: 100px;
+  cursor: pointer;
 }
 
 .contact_us .field.container {

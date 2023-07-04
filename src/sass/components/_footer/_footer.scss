@@ -5,10 +5,10 @@ footer{
             @include padding(10px, 0)
         }
         h3{
-            color: $main_white_color;
             &:first-child{
                 color: $black_color;
             }
+            color: $main_white_color;
         }
         p{
             @include text(16px, 400, #999)
@@ -49,10 +49,6 @@ footer{
 
     
     .footer_field{
-        
-        *{
-            // color: $main_white_color;
-        }
         background: $black_color;
         &,& .field{
             @include padding(20px, 0)

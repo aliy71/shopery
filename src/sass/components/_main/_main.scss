@@ -4,6 +4,8 @@
             align-items: start;
         }
         aside{
+            // height: 80vh;
+            overflow-y: auto;
             .col-12{
                 height: 50px;
                 border-bottom: 1px solid #c0c0c0;
@@ -41,6 +43,8 @@
         }
         article{
             @import './shop';
+
+            overflow: auto;
         }
     }
 }
