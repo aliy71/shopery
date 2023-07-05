@@ -43,8 +43,7 @@
         }
         article{
             @import './shop';
-
-            overflow: auto;
+            @import './blog';
         }
     }
 }

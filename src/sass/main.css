@@ -32,11 +32,18 @@
 }
 .__app .btn {
   padding: 16px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFFFF;
   border: none;
   border-radius: 30px;
   background: #00B207;
-  color: #FFFFFF;
   cursor: pointer;
+}
+.__app .outline {
+  background: none;
+  color: #00B207;
+  padding-left: 0;
 }
 .__app .border {
   border: 1px solid #e6e6e6;
@@ -451,9 +458,6 @@ header nav .menu_bar .field .phone_number {
 .main .container aside .col-12.active li:first-child i {
   rotate: 180deg;
 }
-.main .container article {
-  overflow: auto;
-}
 .main .container article .shop .field {
   flex-wrap: wrap;
   row-gap: 10px;
@@ -471,6 +475,39 @@ header nav .menu_bar .field .phone_number {
 }
 .main .container article .shop .field .col-4 .col-12:last-child .col-3 {
   width: 20%;
+}
+.main .container article #blog {
+  padding: 25px 0;
+}
+.main .container article #blog .field.wrapper {
+  row-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.main .container article #blog .field.wrapper .col-5 {
+  width: 49%;
+}
+.main .container article #blog .field.wrapper .col-5 .col-12 {
+  padding: 10px 20px;
+}
+.main .container article #blog .field.wrapper .col-5 .col-12:first-child {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0;
+}
+.main .container article #blog .field.wrapper .col-5 .col-12:first-child img {
+  height: 100%;
+}
+.main .container article #blog .field.wrapper .col-5 .col-12 .col-4 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #c0c0c0;
+}
+.main .container article #blog .field.wrapper .col-5:hover {
+  box-shadow: 0px 0px 3px #00B207;
+  background: #FFFFFF;
+  color: #00B207 !important;
 }
 
 .testominal {

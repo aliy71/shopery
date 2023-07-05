@@ -1,0 +1,36 @@
+#blog{
+    @include padding(25px, 0);
+
+    .field{
+        &.wrapper{
+            row-gap: 10px;
+            column-gap: 10px;
+            
+            .col-5{
+                width: 49%;
+                
+                .col-12{
+                    @include padding(10px, 20px);
+
+                    &:first-child{
+                        height: 300px;
+                        object-fit: cover;
+                        padding: 0;
+                        img{
+                            height: 100%;
+                        }
+                    }
+
+                    .col-4{
+                        @include text(14px, 400, #c0c0c0);
+                    }
+                    
+                }
+
+                &:hover{
+                    @include hover_text()
+                }
+            }
+        }
+    }
+}

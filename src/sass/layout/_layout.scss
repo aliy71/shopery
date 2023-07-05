@@ -43,11 +43,17 @@
 
     .btn{
         @include padding(16px, 40px);
+        @include text(16px, 600, $main_white_color);
         border: none;
         border-radius: 30px;
         background: $main_green_color;
-        color: $main_white_color;
         cursor: pointer;
+    }
+
+    .outline{
+        background: none;
+        color: $main_green_color;
+        padding-left: 0;
     }
 
     .border{

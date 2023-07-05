@@ -1,0 +1,9 @@
+@mixin hover_box($b_weight: 3px, $b_color: $main_green_color, $bg_color: $main_white_color){
+    box-shadow: 0px 0px $b_weight $b_color;
+    background: $bg_color;
+}
+
+@mixin hover_text($box_border_w: 3px, $box_border_color: $main_green_color, $bg_color: $main_white_color, $color: $main_green_color){
+    @include hover_box($box_border_w, $box_border_color, $bg_color);
+    color: $color !important;
+}
